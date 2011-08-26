@@ -1,5 +1,11 @@
 DeviseApp::Application.routes.draw do
 
+  get "home/index"
+
+  resources :posts
+
+  resources :roles
+
   devise_for :users
 
   root :to => "home#index"
