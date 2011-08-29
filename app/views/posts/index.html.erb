@@ -13,7 +13,8 @@
     <td><%= post.content %></td>
     <% if can? :read, post %>
 	<td><%= link_to 'Show', post %></td>
-    <% elsif can? :manage, post %>
+	<% end %>
+    <% if can? :manage, post %>
     	<td><%= link_to 'Edit', edit_post_path(post) %></td>
    	<td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
     <%end%>

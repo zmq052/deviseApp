@@ -1,6 +1,10 @@
 DeviseApp::Application.routes.draw do
 
-  get "home/index"
+  #get "users/index"
+
+  #get "users/show"
+
+  #get "home/index"
 
   resources :posts
 
@@ -8,6 +12,9 @@ DeviseApp::Application.routes.draw do
 
   devise_for :users
 
+  resources :users
+
+  resources :homes
   root :to => "home#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
