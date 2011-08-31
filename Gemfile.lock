@@ -1,3 +1,17 @@
+GIT
+  remote: git://github.com/stanislaw/cantango.git
+  revision: 38122feb5866ac028f1157962bcd4a78bf7905fa
+  branch: mengqiao
+  specs:
+    cantango (0.8.4)
+      cancan (>= 1.4)
+      dkastner-moneta (>= 1.0)
+      hashie (>= 0.4)
+      rails (>= 3.0.1)
+      sourcify
+      sqlite3
+      sugar-high (>= 0.5)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -32,14 +46,6 @@ GEM
     bcrypt-ruby (2.1.4)
     builder (2.1.2)
     cancan (1.6.5)
-    cantango (0.8.4)
-      cancan (>= 1.4)
-      dkastner-moneta (>= 1.0)
-      hashie (>= 0.4)
-      rails (>= 3.0.1)
-      sourcify
-      sqlite3
-      sugar-high (>= 0.5)
     devise (1.4.2)
       bcrypt-ruby (~> 2.1.2)
       orm_adapter (~> 0.0.3)
@@ -111,7 +117,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cantango
+  cantango!
   devise
   rails (= 3.0.10)
   sqlite3
