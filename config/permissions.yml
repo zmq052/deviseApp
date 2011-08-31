@@ -1,0 +1,7 @@
+roles:
+  user:
+    can:
+      manage: [Post]
+role_groups:
+licenses:
+users:

@@ -1,6 +1,8 @@
 DeviseApp::Application.routes.draw do
 
-  devise_for :users
+  resources :posts
+
+  devise_for :users, :admins
 
   root :to => "home#index"
   # The priority is based upon order of creation:
