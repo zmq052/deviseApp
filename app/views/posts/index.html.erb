@@ -11,10 +11,10 @@
 <% @posts.each do |post| %>
   <tr>
     <td><%= post.content %></td>
-    <% if can? :read, post %>
+    <% if user_can?(:read, Post) %>
 	<td><%= link_to 'Show', post %></td>
 	<% end %>
-    <% if can? :manage, post %>
+    <% if user_can?(:manage, Post) %>
     	<td><%= link_to 'Edit', edit_post_path(post) %></td>
    	<td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
     <%end%>
