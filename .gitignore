@@ -1,4 +1,8 @@
 .bundle
 db/*.sqlite3
 log/*.log
+Gemfile.lock
+Gemfile.lock.orig
 tmp/
+.project
+.DS_Store

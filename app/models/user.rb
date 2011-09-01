@@ -11,4 +11,8 @@ class User < ActiveRecord::Base
   def roles_list
    [:user, :admin]
   end
+  
+  def role_groups_list
+   [:user, :admin]
+  end
 end

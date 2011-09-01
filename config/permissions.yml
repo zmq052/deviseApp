@@ -1,7 +1,7 @@
 roles:
   user:
     can:
-      manage: [Post]
+      edit: [Post]
 role_groups:
 licenses:
 users:
