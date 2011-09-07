@@ -1,7 +1,13 @@
 roles:
-  user:
-    can:
-      edit: [Post]
 role_groups:
 licenses:
 users:
+user_types:
+  user:
+    can:
+      manage:
+      - all
+  admin:
+    can:
+      manage:
+      - all

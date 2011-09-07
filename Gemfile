@@ -8,9 +8,14 @@ gem 'rails', '3.0.10'
 gem 'sqlite3'
 
 gem 'devise'
-gem 'cantango', :git => "git://github.com/stanislaw/cantango.git", :branch => "fixes"
-gem 'sweetloader'
+#gem 'cantango', :path => '../../gems/cantango'
+gem 'cantango'
+# :git => "git://github.com/stanislaw/cantango.git", :branch => "fixes"
 
+#, :git => "git://github.com/stanislaw/cantango.git", :branch => "fixes"
+gem 'sweetloader'
+gem 'simple_roles', :git => "git://github.com/stanislaw/simple_roles.git"
+#gem 'simple_roles', :path =>'~/.rvm/gems/ruby-1.9.2-p290/gems/simple_roles'
 # Use unicorn as the web server
 # gem 'unicorn'
 

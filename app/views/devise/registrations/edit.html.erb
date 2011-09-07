@@ -15,6 +15,11 @@
   <p><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
   <%= f.password_field :current_password %></p>
 
+	<% for role in Role.find(:all) %> <div>
+			<%= check_box_tag "user[role_ids][]", role.id %>
+			<%= role.name %> </div>
+	<% end %>
+
   <p><%= f.submit "Update" %></p>
 <% end %>
 

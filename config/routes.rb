@@ -1,5 +1,10 @@
 DeviseApp::Application.routes.draw do
 
+#  get "roles/index"
+
+ # get "roles/show"
+
+  resources :roles
   resources :posts
 
   devise_for :users, :admins
