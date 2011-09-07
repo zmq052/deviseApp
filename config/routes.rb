@@ -1,9 +1,12 @@
 DeviseApp::Application.routes.draw do
 
+#  get "users/index"
+
 #  get "roles/index"
 
  # get "roles/show"
 
+  resources :users
   resources :roles
   resources :posts
 
